@@ -1,0 +1,215 @@
+<html>
+ <head>
+  <title>
+   Worque
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .header, .footer {
+            background-color: #333333; /* Dark color for header and footer */
+            color: #ffffff;
+            padding: 20px 40px;
+        }
+        .header .container, .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #ffffff;
+            transition: width 0.3s ease;
+            -webkit-transition: width 0.3s ease;
+        }
+        .nav a:hover::after {
+            width: 100%;
+            left: 0;
+            background: #ffffff;
+        }
+        .nav a:hover {
+            color: #cccccc;
+        }
+        .nav .btn {
+            border: 1px solid #ffffff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav .btn:hover {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+        }
+        .text-content {
+            max-width: 50%;
+        }
+        .text-content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .text-content p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .buttons .btn-primary {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .buttons .btn-primary:hover {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #000000;
+        }
+        .buttons .btn-secondary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #000000;
+            transition: color 0.3s;
+        }
+        .buttons .btn-secondary:hover {
+            color: #555555;
+        }
+        .partners {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .partners img {
+            height: 24px;
+        }
+        .image-content {
+            max-width: 50%;
+        }
+        .image-content img {
+            width: 100%;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container">
+    <div class="logo">
+     <img alt="Worque logo" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-Nyxqj44GbOXFPXfszp962OiR.png?st=2024-09-04T04%3A48%3A51Z&amp;se=2024-09-04T06%3A48%3A51Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T22%3A53%3A52Z&amp;ske=2024-09-04T22%3A53%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=OISqyLPZQ49GFgN0GLEVb/gpjX17IqfP3QbPC0RxxSo%3D" width="40"/>
+     worque.
+    </div>
+    <div class="nav">
+     <a href="#">
+      Platform
+     </a>
+     <a href="#">
+      Solutions
+     </a>
+     <a href="#">
+      Resources
+     </a>
+     <a href="#">
+      Pricing
+     </a>
+     <a class="btn" href="#">
+      Log in
+     </a>
+     <a class="btn" href="#">
+      Get started
+     </a>
+    </div>
+   </div>
+  </header>
+  <div class="content">
+   <div class="text-content">
+    <h1>
+     Integrate your stack → automate your work
+    </h1>
+    <p>
+     Evolve at the speed and scale of your business with the leader in low-code automation
+    </p>
+    <div class="buttons">
+     <a class="btn-primary" href="#">
+      Start free trial
+     </a>
+     <a class="btn-secondary" href="#">
+      <i class="fas fa-arrow-right">
+      </i>
+      Get a demo
+     </a>
+    </div>
+    <div class="partners">
+     <span>
+      Working with the best
+     </span>
+     <img alt="Spotify logo" height="24" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-gBKeXuv2P4XowuhKF2DXQiXv.png?st=2024-09-04T04%3A22%3A08Z&amp;se=2024-09-04T06%3A22%3A08Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A47%3A47Z&amp;ske=2024-09-04T23%3A47%3A47Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=ySXZSq81JgAbf8yq%2BJJrJszpxF4Q7v46Rggz2U0wT%2Bs%3D" width="100"/>
+     <img alt="Walmart logo" height="24" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-9Re1cevouufBwnUovBwILcjc.png?st=2024-09-04T04%3A22%3A12Z&amp;se=2024-09-04T06%3A22%3A12Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A37%3A53Z&amp;ske=2024-09-04T23%3A37%3A53Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=AIabhUSVnIwF7UW2N/%2BLcjBLXG5JnDMsEpte5rl0qBM%3D" width="100"/>
+     <img alt="Vodafone logo" height="24" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-X2Sh0qDULQF6w1909lfgqVME.png?st=2024-09-04T04%3A22%3A12Z&amp;se=2024-09-04T06%3A22%3A12Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T01%3A42%3A45Z&amp;ske=2024-09-05T01%3A42%3A45Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=9NCY3E67m/z%2BWaNcTx2rLTmfGViE8fFrTlkVHwgWIFM%3D" width="100"/>
+     <img alt="Canon logo" height="24" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-rHdQbxeGNiLjatqeBl7AFyND.png?st=2024-09-04T04%3A22%3A12Z&amp;se=2024-09-04T06%3A22%3A12Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T22%3A49%3A28Z&amp;ske=2024-09-04T22%3A49%3A28Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=UGqBiWY5SZkosk/1jZPXgL1pTjS6Uz7%2B9lZGEM7c2OE%3D" width="100"/>
+    </div>
+   </div>
+   <div class="image-content">
+    <img alt="Illustration of automation process" height="500" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-wP6uMmUKx3Zl6sAkhnpQT0lN.png?st=2024-09-04T04%3A22%3A15Z&amp;se=2024-09-04T06%3A22%3A15Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T00%3A07%3A25Z&amp;ske=2024-09-05T00%3A07%3A25Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=RbXK0ASacyRiZ1uVjxGyCDg2koY51/GJviWgtOE34f4%3D" width="500"/>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <div>
+     © 2023 Worque. All rights reserved.
+    </div>
+    <div class="nav">
+     <a href="#">
+      Privacy Policy
+     </a>
+     <a href="#">
+      Terms of Service
+     </a>
+     <a href="#">
+      Contact Us
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>

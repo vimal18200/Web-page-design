@@ -1,0 +1,194 @@
+<html>
+ <head>
+  <title>
+   New School
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #ffffff;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #2c2c54, #24243e);
+            color: white;
+            padding: 50px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://placehold.co/600x800') no-repeat center center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: 0;
+        }
+        .container > * {
+            z-index: 1;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 50px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .header-content {
+            text-align: left;
+            max-width: 600px;
+        }
+        .header-content h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .header-content p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .buttons a {
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+        .buttons .start-today {
+            background-color: #00bcd4;
+        }
+        .buttons .registration {
+            background-color: #424242;
+        }
+        .category {
+            margin-top: 30px;
+        }
+        .category h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .category a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+        .category a:hover {
+            text-decoration: underline;
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .images img {
+            border-radius: 50px;
+            width: 150px;
+            height: 300px;
+            object-fit: cover;
+        }
+        .sign-in {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ffb74d;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <a class="sign-in" href="#">
+    Sign In
+   </a>
+   <div class="navbar">
+    <div class="logo">
+     New School
+    </div>
+    <div>
+     <a href="#">
+      About
+     </a>
+     <a href="#">
+      Academy
+     </a>
+     <a href="#">
+      Features
+     </a>
+    </div>
+   </div>
+   <div class="header-content">
+    <h1>
+     Your Modern Online School
+    </h1>
+    <p>
+     New School is an aggregator of multimedia educational materials from around the world.
+    </p>
+    <div class="buttons">
+     <a class="start-today" href="#">
+      Start Today
+     </a>
+     <a class="registration" href="#">
+      Registration
+     </a>
+    </div>
+    <div class="category">
+     <h2>
+      Choose your category:
+     </h2>
+     <a href="#">
+      Elementary School
+     </a>
+     <a href="#">
+      Middle School
+     </a>
+     <a href="#">
+      High School
+     </a>
+    </div>
+   </div>
+   <div class="images">
+    <img alt="Person holding books with red background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-vnnjawGdn2VI7gUsEbSY9DGb.png?st=2024-09-04T03%3A58%3A03Z&amp;se=2024-09-04T05%3A58%3A03Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A03%3A52Z&amp;ske=2024-09-04T23%3A03%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=5PQPdCTCbSguptdYz6dBJNc7k4hiIOJTa%2By2eAefZPU%3D" width="150"/>
+    <img alt="Person holding books with blue background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-aGgkXTjkyBmqoIFqoksxe3UE.png?st=2024-09-04T03%3A58%3A00Z&amp;se=2024-09-04T05%3A58%3A00Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T04%3A58%3A00Z&amp;ske=2024-09-05T04%3A58%3A00Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=z4PVzEWe3bjv1KdSCzrtNLWZRaJWQQfio4O7THUHgEo%3D" width="150"/>
+    <img alt="Person holding books with cyan background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-g8bjzvOxktZh2V4ytuoUhyGc.png?st=2024-09-04T03%3A58%3A00Z&amp;se=2024-09-04T05%3A58%3A00Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A50%3A29Z&amp;ske=2024-09-04T23%3A50%3A29Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=U9MPikZ5KJB6pPJxGwnAZkXD%2BvzvQqsggy8bvCBUvHs%3D" width="150"/>
+    <img alt="Person holding books with magenta background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-6EoEd3hpF7UbHC6F4Dnzdo4a.png?st=2024-09-04T03%3A58%3A01Z&amp;se=2024-09-04T05%3A58%3A01Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A42%3A41Z&amp;ske=2024-09-04T23%3A42%3A41Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=gbpar8F2JSyN1W5zWXTpfB9MPjvgdKpBLWR8frgvgc0%3D" width="150"/>
+    <img alt="Person holding books with yellow background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-D7FsaPiocXahHkWfFwsfHS5O.png?st=2024-09-04T03%3A57%3A59Z&amp;se=2024-09-04T05%3A57%3A59Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-04T00%3A26%3A31Z&amp;ske=2024-09-05T00%3A26%3A31Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=nPyOesuEg%2BwyG0AA%2BkftZUtvNdqqGJcY9inb5Z7P1Fk%3D" width="150"/>
+    <img alt="Person holding books with green background" height="300" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-h4Sk5L4lXlgjj9ydYOqzNENx.png?st=2024-09-04T03%3A58%3A02Z&amp;se=2024-09-04T05%3A58%3A02Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T17%3A53%3A32Z&amp;ske=2024-09-04T17%3A53%3A32Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=8Z9Ca4h5K2Ly8hA4m1lBjX/s7bnM/qa5tjiBhH0ECrw%3D" width="150"/>
+   </div>
+  </div>
+ </body>
+</html>

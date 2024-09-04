@@ -1,0 +1,247 @@
+<html>
+ <head>
+  <title>
+   Portfolio
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            color: #333333;
+        }
+        .header, .footer {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 20px 40px;
+        }
+        .header .container, .footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 400;
+            position: relative;
+            transition: color 0.3s;
+        }
+        .nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #ffffff;
+            transition: width 0.3s ease;
+            -webkit-transition: width 0.3s ease;
+        }
+        .nav a:hover::after {
+            width: 100%;
+            left: 0;
+            background: #ffffff;
+        }
+        .nav a:hover {
+            color: #cccccc;
+        }
+        .nav .btn {
+            border: 1px solid #ffffff;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #ffffff;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav .btn:hover {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .content h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .content p {
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .buttons .btn-primary {
+            background-color: #333333;
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .buttons .btn-primary:hover {
+            background-color: #ffffff;
+            color: #333333;
+            border: 1px solid #333333;
+        }
+        .buttons .btn-secondary {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #333333;
+            transition: color 0.3s;
+        }
+        .buttons .btn-secondary:hover {
+            color: #555555;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .project {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: left;
+        }
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 20px;
+        }
+        .project-content h3 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+        .project-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #666666;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+   <div class="container">
+    <div class="logo">
+     My Portfolio
+    </div>
+    <div class="nav">
+     <a href="#">
+      Home
+     </a>
+     <a href="#">
+      About
+     </a>
+     <a href="#">
+      Projects
+     </a>
+     <a href="#">
+      Contact
+     </a>
+     <a class="btn" href="#">
+      Resume
+     </a>
+    </div>
+   </div>
+  </header>
+  <div class="content">
+   <h1>
+    Welcome to My Portfolio
+   </h1>
+   <p>
+    Hi, I'm a fresher passionate about web development and design. Check out my projects below.
+   </p>
+   <div class="buttons">
+    <a class="btn-primary" href="#">
+     View Projects
+    </a>
+    <a class="btn-secondary" href="#">
+     <i class="fas fa-arrow-right">
+     </i>
+     Contact Me
+    </a>
+   </div>
+   <div class="projects">
+    <div class="project">
+     <img alt="Project 1" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-D19tshyjxp7T4rZOLI8nTKD8.png?st=2024-09-04T04%3A51%3A28Z&amp;se=2024-09-04T06%3A51%3A28Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A56%3A17Z&amp;ske=2024-09-04T23%3A56%3A17Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=9omEdYWnybLHWE5OT2fAe5HyQeX/2l87MQcRNDunJkM%3D" width="300"/>
+     <div class="project-content">
+      <h3>
+       Project 1
+      </h3>
+      <p>
+       Description of project 1.
+      </p>
+     </div>
+    </div>
+    <div class="project">
+     <img alt="Project 2" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-LwE2SuhxBNgzavxQ87nyejuO.png?st=2024-09-04T04%3A51%3A24Z&amp;se=2024-09-04T06%3A51%3A24Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T23%3A41%3A55Z&amp;ske=2024-09-04T23%3A41%3A55Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=AuK%2B62QdUS1pKaXi%2B337LNb4UZTEA%2BdM71DeQSnpvXk%3D" width="300"/>
+     <div class="project-content">
+      <h3>
+       Project 2
+      </h3>
+      <p>
+       Description of project 2.
+      </p>
+     </div>
+    </div>
+    <div class="project">
+     <img alt="Project 3" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-mrFUBqO59ERILw95LwMJbytn.png?st=2024-09-04T04%3A51%3A26Z&amp;se=2024-09-04T06%3A51%3A26Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-03T18%3A46%3A36Z&amp;ske=2024-09-04T18%3A46%3A36Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=tQJN0adYStopL1D9fFEpiqfVHE/yI3W6FiD4XxpoSTw%3D" width="300"/>
+     <div class="project-content">
+      <h3>
+       Project 3
+      </h3>
+      <p>
+       Description of project 3.
+      </p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <footer class="footer">
+   <div class="container">
+    <div>
+     © 2023 My Portfolio. All rights reserved.
+    </div>
+    <div class="nav">
+     <a href="#">
+      Privacy Policy
+     </a>
+     <a href="#">
+      Terms of Service
+     </a>
+     <a href="#">
+      Contact
+     </a>
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
