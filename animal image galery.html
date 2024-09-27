@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Animal Image Gallery
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header {
+            position: relative;
+            background: url('https://placehold.co/1920x300?text=Animal+Image+Gallery') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+        .header h1, .header p {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        .navbar {
+            background-color: #ff6600;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s, border-bottom 0.3s;
+        }
+        .navbar a:hover {
+            color: #333;
+            border-bottom: 2px solid #333;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .card {
+            background-color: white;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+        .card-content p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .card-content .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .card-content .btn:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <h1>
+    Animal Image Gallery
+   </h1>
+   <p>
+    Explore the beauty of wildlife through our curated gallery.
+   </p>
+  </div>
+  <div class="navbar">
+   <a href="#">
+    Home
+   </a>
+   <a href="#">
+    Gallery
+   </a>
+   <a href="#">
+    About
+   </a>
+   <a href="#">
+    Contact
+   </a>
+  </div>
+  <div class="content">
+   <div class="card">
+    <img alt="Lion" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-OQjtdBjthREM69JEVmf8x3nN.png?st=2024-09-27T00%3A39%3A22Z&amp;se=2024-09-27T02%3A39%3A22Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A05%3A41Z&amp;ske=2024-09-27T23%3A05%3A41Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=8xxomF6CariChtOk85B6nstrNs0yGHCR0NMAycN0flk%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Lion
+     </h3>
+     <p>
+      The lion is one of the big cats in the genus Panthera and a member of the family Felidae.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Elephant" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-mXK3OfYhbsx2QX095gS2A7og.png?st=2024-09-27T00%3A39%3A26Z&amp;se=2024-09-27T02%3A39%3A26Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A13%3A21Z&amp;ske=2024-09-27T23%3A13%3A21Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=MfUVYEZnSjNs090x%2BinEUh4hDqVUHGNRMNYuS05Qe5A%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Elephant
+     </h3>
+     <p>
+      Elephants are the largest existing land animals. Three species are currently recognized.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Giraffe" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-mh5g5oybNDpS8qp68mEqSvlK.png?st=2024-09-27T00%3A39%3A25Z&amp;se=2024-09-27T02%3A39%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A24%3A29Z&amp;ske=2024-09-27T23%3A24%3A29Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=/rjwglZyMGlS1idtP15clYEiygNplNgY9P34Aqbqqj8%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Giraffe
+     </h3>
+     <p>
+      The giraffe is an African artiodactyl mammal, the tallest living terrestrial animal.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Zebra" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-37lB6XfQTNN26uHONswd8DZs.png?st=2024-09-27T00%3A39%3A25Z&amp;se=2024-09-27T02%3A39%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A04%3A23Z&amp;ske=2024-09-27T23%3A04%3A23Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=2nyrkB2MLUUFaWGZjzKM//7Uu6HBDk%2B/ux3CCHXvFVg%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Zebra
+     </h3>
+     <p>
+      Zebras are African equines with distinctive black-and-white striped coats.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Tiger" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-BQLuGM9nR0JskUiZRJwcW3wg.png?st=2024-09-27T00%3A39%3A24Z&amp;se=2024-09-27T02%3A39%3A24Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A15%3A07Z&amp;ske=2024-09-27T23%3A15%3A07Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=nxWwRpfd488OmlLR2rwDvaABTbB235PPgSsAr4vQDME%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Tiger
+     </h3>
+     <p>
+      The tiger is the largest living cat species and a member of the genus Panthera.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Panda" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-TzbBGVxAEeYmB2mU14PVrZ7Q.png?st=2024-09-27T00%3A39%3A29Z&amp;se=2024-09-27T02%3A39%3A29Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A13%3A12Z&amp;ske=2024-09-27T23%3A13%3A12Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=Qh/EDQ/BuSnYcI61puSJFzzrOnm6IFlmwspJtCXndyY%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Panda
+     </h3>
+     <p>
+      The giant panda, also known as the panda bear or simply the panda, is a bear native to South Central China.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Kangaroo" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-jSHLesPMMExslZ7ubpRbbqOk.png?st=2024-09-27T00%3A39%3A25Z&amp;se=2024-09-27T02%3A39%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A35%3A04Z&amp;ske=2024-09-27T23%3A35%3A04Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=8MBYgJ%2B37BPke8RHgC0sQ0KBX4EBDUlCorxlWsVfXi4%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Kangaroo
+     </h3>
+     <p>
+      The kangaroo is a marsupial from the family Macropodidae (macropods, meaning "large foot").
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Penguin" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr/user-ehrvabJ3DufsCu8YJ7PqY5gl/img-lBoifF89H45VPHzh3ugg3VsB.png?st=2024-09-27T00%3A39%3A23Z&amp;se=2024-09-27T02%3A39%3A23Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-26T23%3A15%3A48Z&amp;ske=2024-09-27T23%3A15%3A48Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=N4rE20fwniKIF98qEE5XB0Hn6hBS%2BMmjFn5IZZ5A3r0%3D" width="300"/>
+    <div class="card-content">
+     <h3>
+      Penguin
+     </h3>
+     <p>
+      Penguins are a group of aquatic flightless birds. They live almost exclusively in the Southern Hemisphere.
+     </p>
+     <a class="btn" href="#">
+      View More
+     </a>
+    </div>
+   </div>
+   <div class="card">
+    <img alt="Koala" height="200" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-RcpoXHkzChYnDbFAyeQ8tamr
